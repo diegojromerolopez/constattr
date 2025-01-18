@@ -16,6 +16,21 @@ class TestDecorators(unittest.TestCase):
 
         self.assertEqual('You cannot set the constant MY_CONST1 in class Example', str(context.exception))
 
+    def test_cannot_reassign_constant_class_attribute_of_class_with_metaclass(self):
+        class ExampleMeta(type):
+            pass
+
+        @constclassattrs
+        class Example(metaclass=ExampleMeta):
+            MY_CONST1 = '1'
+            MY_CONST2 = '2'
+
+        self.assertEqual('ConstantEnforcerCombinedMeta', type(Example).__name__)
+        with self.assertRaises(ConstAssignmentError) as context:
+            Example.MY_CONST1 = 'new value for the constant'
+
+        self.assertEqual('You cannot set the constant MY_CONST1 in class Example', str(context.exception))
+
     def test_can_reassign_class_attribute(self):
         @constclassattrs
         class Example:

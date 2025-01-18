@@ -22,7 +22,9 @@ Example1.MY_CONST1 = 'new value for the constant'
 ```
 
 ## Limitations
-Your class cannot have a metaclass defined.
+If your class has a metaclass defined, it will work, but in case of conflict
+the MRO in the metaclass will choose the [ConstantEnforcerMeta](/constattr/const_enforcer_meta.py)
+class first.
 
 ## Dependencies
 This package has no dependencies.
