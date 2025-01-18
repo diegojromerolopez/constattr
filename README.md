@@ -1,5 +1,19 @@
 # constattr
-Ensure your constants class attributes are not re-assigned in python.
+
+![test](https://github.com/diegojromerolopez/constattr/actions/workflows/test.yml/badge.svg)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/diegojromerolopez/constattr/graphs/commit-activity)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
+Enforce your class constants in python.
+
+> The only constant in life is change
+
+*Heraclitus*
+
+> Not anymore!
+
+*Didacus I. Granatensis*
 
 ## Usage
 Decorate your class with `constclassattrs` and when a class attribute that is uppercase
@@ -22,7 +36,9 @@ Example1.MY_CONST1 = 'new value for the constant'
 ```
 
 ## Limitations
-Your class cannot have a metaclass defined.
+If your class has a metaclass defined, it will work, but in case of conflict
+the MRO in the metaclass will choose the [ConstantEnforcerMeta](/constattr/const_enforcer_meta.py)
+class first.
 
 ## Dependencies
 This package has no dependencies.
