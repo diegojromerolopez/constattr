@@ -13,7 +13,7 @@ Enforce your class constants in python.
 
 > Not anymore!
 
-*Didacus Granatensis*
+*Didacus I. Granatensis*
 
 ## Usage
 Decorate your class with `constclassattrs` and when a class attribute that is uppercase
