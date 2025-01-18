@@ -7,7 +7,7 @@ long_description = open(os.path.join(root_dir_path, "README.md")).read()
 
 setup(
     name="constattr",
-    version="0.0.3",
+    version="0.0.4",
     author="Diego J. Romero López",
     author_email="diegojromerolopez@gmail.com",
     description="Enforce that your constant class attributes are not re-assigned",
