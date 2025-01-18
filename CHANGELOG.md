@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.0.4 (2025-01-16)
+- Link Code Climate reports in README.
+
 ## 0.0.3 (2025-01-16)
 - Add test coverage github action.
 - Link coverage to [Code Climate](https://codeclimate.com/github/diegojromerolopez/constattr).
