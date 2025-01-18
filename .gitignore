@@ -169,3 +169,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Pycharm
+.idea
+
+# MacOS
+.DS_Store
