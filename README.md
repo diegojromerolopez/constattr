@@ -28,7 +28,7 @@ is re-assigned the exception `ConstantAssignmentError` will be raised.
 ## Example
 
 ```python
-from constattr.decorators import constclassattrs
+from constattr import constclassattrs
 
 
 @constclassattrs

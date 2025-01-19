@@ -1,6 +1,6 @@
 import unittest
 
-from constattr.decorators import constclassattrs
+from constattr import constclassattrs
 from constattr.exceptions import ConstAssignmentError
 
 
