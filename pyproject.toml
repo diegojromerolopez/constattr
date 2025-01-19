@@ -1,6 +1,6 @@
 [project]
-name = "constattr_diegojromerolopez"
-version = "0.0.6"
+name = "constattr"
+version = "0.0.7"
 authors = [
   { name="Diego J. Romero López", email="diegojromerolopez@gmail.com" },
 ]
